@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from sklearn import linear_model
 
 df = pd.read_csv("area-preco.csv")
 
 
-modelo = LinearRegression()
+modelo = linear_model.LinearRegression()
 x = df[["Area"]]
 y = df[["Preco"]]
 
